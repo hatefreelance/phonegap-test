@@ -1,0 +1,47 @@
+<div class="row row-center login-form-row" flex layout="row" layout-align="center center">
+    <div class="flex form-non-flex">
+        <div class="col col-center">
+            <h1 class="title">
+                <img src="img/logo.png" alt=""/>
+            </h1>
+
+
+            <div class="login-form-wrap" md-theme="forms">
+                <form ng-submit="doLogin()">
+                    <div class="list">
+                        <div class="login-form-fields">
+                            <md-input-container flex>
+                                <label>Username</label>
+                                <input ng-model="loginData.username" placeholder="Username">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label>Password</label>
+                                <input ng-model="loginData.password" type="password"  placeholder="Password">
+                            </md-input-container>
+                        </div>
+
+                        <div layout="row">
+                            <div flex>
+                                <md-button type="submit">Sign In</md-button>
+                            </div>
+                            <div flex style="text-align: right;">
+                                <md-button>Sign up</md-button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+  </div>
+<style>
+    md-toolbar {
+        display: none !important;
+    }
+</style>
